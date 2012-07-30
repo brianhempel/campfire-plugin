@@ -12,4 +12,7 @@
     <f:entry title="Project Room Name" description="Optional. Use to send notifications to a room other than the default (${descriptor.getRoom()})" help="${rootURL}/plugin/campfire/help-projectConfig-room.html">
       <f:textbox name="campfireRoom" value="${instance.getConfiguredRoomName()}"/>
     </f:entry>
+    <f:entry title="Enable Build Log Paste" help="${rootURL}/plugin/campfire/help-projectConfig-buildLog.html">
+        <f:checkbox name="campfireBuildLog" checked="${instance.getBuildLog()}" />
+    </f:entry>
 </j:jelly>
